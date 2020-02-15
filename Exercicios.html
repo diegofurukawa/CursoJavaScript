@@ -1,9 +1,11 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Curso de JavaScript - Funções</title>
     </head>
     <body>
         <script>
+
             function retornaExercicio(exercicio){
                    if (exercicio == 1){
                     
@@ -12,30 +14,57 @@
                     console.log(a);                    
                    
                     }else if (exercicio == 2){
+                        var x = 31; var y = 321;
                         
-                        var a = pares.call(321, 32, 321);
+                        for (var i = x; i <= y; i++){ 
+                                par(i);
+                        }
                     
-                    console.log(a);  
+                    }else if (exercicio == 3){
+                            var anos = 15 ;
+                            experiencia(anos);
+                        }
+                    
                    }
-                }
                 
             retornaExercicio(2);
             
+
+
             function retornaEndereco(cidade, uf, bairro, rua, numero){
                 var endereco = ('O usuário mora em '+ cidade + ' / ' + uf +' , no bairro da '+ bairro +', na rua '+ rua+' com nº '+ numero);
 
                 return endereco;
             }    
 
-            function pares(x, y) {  
-                for (var i = x; i <= y; i++){    
-                    var n = i % 2;
-                    if (n == 0) {
-                        return n;
-                        //console.log(n);
-                    }                
+
+            function par(n){
+                //n = prompt("digite numero");
+                var resto = n % 2;
+                if (resto == 0) {
+                    console.log(n + " É um número Par");
+                    //alert(n + " É um número Par");
+                } else {
+                    console.log(n + " É um número Ímpar");
+                    //alert(n + " É um número Ímpar");
                 }
-            }            
+            }
+            
+
+            function experiencia(anos) {  
+                if (anos >=0 && anos<=1){
+                    console.log('Iniciante');
+                }else if (anos > 1 && anos <= 3){
+                    console.log('Intermediário');
+                }else if (anos > 3 && anos <= 6){
+                    console.log('Avançado');
+                }else if(anos >= 7){
+                    console.log('Jedi Master');
+                }else{
+                    console.log('Não Sei Dizer');
+                }
+            }
+
         </script>
     </body>
 </html>
