@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Curso de JavaScript - Funções</title>
+    </head>
+    <body>
+        <script>
+            /*
+            function retornaEndereco(rua, numero, bairro, cidade, uf){
+                var endereco =  'O usuário mora em ' 
+                                + cidade 
+                                + ' / ' 
+                                + uf 
+                                + ' , no bairro da ' 
+                                + bairro 
+                                +', na rua '
+                                + rua
+                                +' com nº '
+                                + numero;
+
+                return endereco;
+            }    
+
+            var endereco = retornaEndereco('Flavio Cescon', '133', 'Vila Gomes', 'São Paulo', 'SP');
+            
+            console.log(endereco);
+            */
+
+            /*
+            for (var i = 0; i <= 100; i++){
+                console.log(i);
+            }
+            */
+
+
+            function pares(x, y) {  
+                for (var i = x; i <= y; i++){    
+                    var n = i % 2;
+                    if (n == 0) {
+                        console.log(i);
+                    }                
+                }
+            }
+            pares(32, 321);
+
+        </script>
+    </body>
+</html>
